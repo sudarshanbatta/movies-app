@@ -1,0 +1,25 @@
+.dashboard-section{
+    .card{
+        margin: 100px;
+        .text-right{
+            p{
+                font-size: 35px;
+            }
+            .dash-title{
+                font-size: 20px;
+            }
+        }
+    }
+    .breakdown-btn{
+        font-weight: 600;
+    }
+}
+.form-control{
+    background-color: #000;
+    color: #fff;
+}
+@media only screen and (max-width: 768px) {
+    .card{
+        margin: 10px !important;
+    }
+    }

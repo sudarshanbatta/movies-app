@@ -1,0 +1,22 @@
+export const dashBoardData=[
+    {
+        "title":"INR",
+        "value":"239824",
+        "image":"../assets/currency-dollar.svg"
+    },
+    {
+        "title":"MIN",
+        "value":"87989898",
+        "image":"../assets/stopwatch.svg"
+    },
+    {
+        "title":"RENT",
+        "value":"03",
+        "image":"../assets/ticket-perforated.svg"
+    },
+    {
+        "title":"VIEWS",
+        "value":"20",
+        "image":"../assets/play-circle.svg"
+    }
+]

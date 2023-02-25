@@ -1,0 +1,74 @@
+<div class="container-fluid bg-black h-100">
+    <div class="filter-section d-flex justify-content-between">
+        <p class="text-light mt-4">STATS</p>
+        <div class="search mt-4">
+            <input type="search" class="form-control" placeholder="Search with keyword...">
+           <img src="../../assets/search.svg">
+          </div>
+      
+    </div>
+    <div class="dashboard-section">
+        <div class="row">
+       <div class="col-md-12">
+            <div class="card p-3">
+                <div *ngFor="let item of moviesList">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-1 col-lg-1 col-xl-1 col-12 text-center">
+                            <img src={{item.image}} height="147px" class="movie-poster" width="90px">
+                        </div>
+                        <div class="col-md-12 col-12 col-sm-11 col-xl-11 col-lg-11 right-content">
+                            <p class="movie-title mb-0">{{item.title}}</p>
+                            <p class="publisg-date">Published : {{item.published}}</p>
+                            <div class="movie-status">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="label">
+                                            TOTAL MINS
+                                        </div>
+                                        <div class="content">
+                                            {{item.totalMins}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="label">
+                                            REVENUE
+                                        </div>
+                                        <div class="content">
+                                            {{item.revenue}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="label">
+                                            VIEWS
+                                        </div>
+                                        <div class="content">
+                                            {{item.views}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="label">
+                                            TYPE
+                                        </div>
+                                        <div class="content">
+                                            {{item.type}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="label">
+                                            STATUS
+                                        </div>
+                                        <div class="content">
+                                            <span  [ngClass]="{'bg-active': item.status === 'Active','bg-inActive': item.status === 'InActive'}">{{item.status}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+       </div>
+        </div>    
+    </div>
+</div>

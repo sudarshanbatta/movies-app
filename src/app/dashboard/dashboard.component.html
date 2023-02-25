@@ -1,0 +1,29 @@
+<div class="container-fluid bg-black h-100">
+    <div class="filter-section d-flex justify-content-between">
+        <p class="text-light mt-4">STATS</p>
+        <div class="mt-4">
+            <p class="text-light">01-Jan-2023 - 13-Jan-2023</p>
+            <select class="form-control">
+                <option value="current" selected>Current</option>
+              </select>
+        </div>
+ 
+       
+    </div>
+    <div class="dashboard-section">
+        <div class="row">
+            <div class="col-md-6 col-12 col-xl-6 col-sm-6"  *ngFor="let item of data">
+                <div class="card p-4 text-light"  [ngClass]="{'bg-primary': item.title === 'INR','bg-success': item.title === 'MIN','bg-danger': item.title === 'RENT','bg-warning': item.title === 'VIEWS'}">
+                    <img src={{item.image}} class="" height="60px" width="60px"><br>
+                    <div class="text-right">
+                        <p class="m-0"><b>{{item.value}}</b></p>
+                        <p class="m-0 dash-title"><b>{{item.title}}</b></p>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-12 text-center mb-5">
+                <button type="button" class="btn btn-outline-warning breakdown-btn bg-light-black py-3 px-4" (click)="gotoMovies()">VIEW BREAKDOWNS</button>
+            </div>
+        </div>    
+    </div>
+</div>

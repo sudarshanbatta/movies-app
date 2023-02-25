@@ -1,0 +1,24 @@
+<div class="container-fluid bg-light-black h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="login-card bg-black p-5">
+                <p class="text-light">AVENDOR LOGIN</p>
+                <div class="card bg-black">
+                    <form [formGroup]="loginForm">
+                        <input type="text" formControlName="vendorEmail" placeholder="VENDOR EMAIL" class="form-control">
+                        <input type="password" formControlName="vendorOtp" placeholder="ENTER OTP" class="form-control mt-4">
+                        <div class="btn-section text-right">
+                            <button type="button" class="btn btn-primary mt-4 login-btn" (click)="login()" [disabled]="loginForm.invalid">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <p>Powerd by <span>AMXR</span></p>
+                <p>&#169; 2023 Alter Moto X Reality</p>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
