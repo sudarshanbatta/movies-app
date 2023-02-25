@@ -97,3 +97,28 @@
       padding: 0 45px !important;
     }
   }
+  @media screen and (max-width: 767px){
+    .image-section{
+      padding: 0 !important;
+    }
+    .right-content{
+      padding: 0 10px 0 85px !important;
+      // width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) and (orientation:landscape){
+    .movie-status{
+      .side-content{
+        max-width: 20% !important;
+        .label{
+          margin-bottom: 10px;
+          font-size: 12px;
+  
+        }
+        .content{
+          font-weight: 600;
+          font-size: 12px;
+        }
+      }
+    }
+  }

@@ -13,15 +13,15 @@
             <div class="card p-3">
                 <div *ngFor="let item of moviesList">
                     <div class="row">
-                        <div class="col-md-12 col-sm-1 col-lg-1 col-xl-1 col-12 text-center">
+                        <div class="col-md-12 col-sm-1 col-lg-1 col-xl-1 col-1 text-center image-section">
                             <img src={{item.image}} height="147px" class="movie-poster" width="90px">
                         </div>
-                        <div class="col-md-12 col-12 col-sm-11 col-xl-11 col-lg-11 right-content">
+                        <div class="col-md-12 col-11 col-sm-11 col-xl-11 col-lg-11 right-content">
                             <p class="movie-title mb-0">{{item.title}}</p>
                             <p class="publisg-date">Published : {{item.published}}</p>
                             <div class="movie-status">
                                 <div class="row">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 side-content">
                                         <div class="label">
                                             TOTAL MINS
                                         </div>
@@ -29,7 +29,7 @@
                                             {{item.totalMins}}
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 side-content">
                                         <div class="label">
                                             REVENUE
                                         </div>
@@ -37,7 +37,7 @@
                                             {{item.revenue}}
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 side-content">
                                         <div class="label">
                                             VIEWS
                                         </div>
@@ -45,7 +45,7 @@
                                             {{item.views}}
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 side-content">
                                         <div class="label">
                                             TYPE
                                         </div>
@@ -53,7 +53,7 @@
                                             {{item.type}}
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 side-content">
                                         <div class="label">
                                             STATUS
                                         </div>

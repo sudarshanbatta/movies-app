@@ -12,11 +12,11 @@
     </div>
     <div class="dashboard-section">
         <div class="row">
-            <div class="col-md-6 col-12 col-xl-6 col-sm-6"  *ngFor="let item of data">
+            <div class="col-md-6 col-6 col-xl-6 col-sm-6 card-section"  *ngFor="let item of data">
                 <div class="card p-4 text-light"  [ngClass]="{'bg-primary': item.title === 'INR','bg-success': item.title === 'MIN','bg-danger': item.title === 'RENT','bg-warning': item.title === 'VIEWS'}">
-                    <img src={{item.image}} class="" height="60px" width="60px"><br>
+                    <img src={{item.image}} class="dash-image" height="60px" width="60px"><br>
                     <div class="text-right">
-                        <p class="m-0"><b>{{item.value}}</b></p>
+                        <p class="m-0 dash-count"><b>{{item.value}}</b></p>
                         <p class="m-0 dash-title"><b>{{item.title}}</b></p>
                     </div>
                 </div> 

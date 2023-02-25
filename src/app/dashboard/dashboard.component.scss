@@ -19,7 +19,28 @@
     color: #fff;
 }
 @media only screen and (max-width: 768px) {
-    .card{
-        margin: 10px !important;
+    .card-section{
+        padding: 0 !important;
+        .card{
+            margin: 10px !important;
+            padding: 10px !important;
+            .dash-image{
+                height: 30px !important;
+                width: 30px !important;
+            }
+            .dash-count{
+                font-size: 25px !important;
+            }
+            .dash-title{
+                font-size: 13px !important;
+            }
+         
+        }
+        
     }
+    
+    .breakdown-btn{
+        margin-top: 30px !important;
+    }
+
     }
