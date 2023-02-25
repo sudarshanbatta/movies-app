@@ -3,6 +3,9 @@
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div class="login-card bg-black p-5">
+                <div class="alert alert-danger" *ngIf="invalidUser" role="alert">
+                    Invalid User name or Password
+                  </div>
                 <p class="text-light">AVENDOR LOGIN</p>
                 <div class="card bg-black">
                     <form [formGroup]="loginForm">
